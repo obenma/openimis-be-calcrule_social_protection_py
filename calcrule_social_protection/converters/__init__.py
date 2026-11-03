@@ -9,3 +9,11 @@ from calcrule_social_protection.converters.group_beneficiary import (
     GroupToBenefitConverter
 )
 
+__all__ = [
+    "BeneficiaryToBillConverter",
+    "BeneficiaryToBillItemConverter",
+    "BeneficiaryToBenefitConverter",
+    "GroupToBillConverter",
+    "GroupToBillItemConverter",
+    "GroupToBenefitConverter",
+]

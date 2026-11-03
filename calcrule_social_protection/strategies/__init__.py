@@ -3,3 +3,11 @@ from calcrule_social_protection.strategies.benefit_package_strategy_interface im
 from calcrule_social_protection.strategies.benefit_package_strategy_storage import BenefitPackageStrategyStorage
 from calcrule_social_protection.strategies.benefit_package_group_strategy import GroupBenefitPackageStrategy
 from calcrule_social_protection.strategies.benefit_package_individual_strategy import IndividualBenefitPackageStrategy
+
+__all__ = [
+    "BaseBenefitPackageStrategy",
+    "BenefitPackageStrategyInterface",
+    "BenefitPackageStrategyStorage",
+    "GroupBenefitPackageStrategy",
+    "IndividualBenefitPackageStrategy",
+]
