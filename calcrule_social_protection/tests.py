@@ -246,4 +246,3 @@ class BenefitPackageStrategyTests(TestCase):
         )
         self.assertEqual(payment_b2, 100.0)
         self.assertFalse(is_exceed_b2, "b2 should not exceed limit (100 < 150)")
-

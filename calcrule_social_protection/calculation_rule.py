@@ -3,10 +3,8 @@ from calcrule_social_protection.strategies import (
 )
 from calcrule_social_protection.config import CLASS_RULE_PARAM_VALIDATION, DESCRIPTION_CONTRIBUTION_VALUATION, FROM_TO
 from core.abs_calculation_rule import AbsStrategy
-from core.signals import *
 from core import datetime
 from contribution_plan.models import PaymentPlan
-from django.contrib.contenttypes.models import ContentType
 
 
 class SocialProtectionCalculationRule(AbsStrategy):
@@ -22,8 +20,6 @@ class SocialProtectionCalculationRule(AbsStrategy):
     type = "social_protection"
     sub_type = "benefit_plan"
     CLASS_NAME_CHECK = ['PaymentPlan']
-
-
 
     @classmethod
     def run_calculation_rules(cls, sender, instance, user, context, **kwargs):
